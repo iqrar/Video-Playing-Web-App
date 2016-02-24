@@ -1,0 +1,38 @@
+<section id="home">
+  <!--video player -->
+   <section id = "player">
+   <div class = "container">
+      <div class = "row">
+         <div class = " col-sm-8 col-sm-offset-2">
+            <video ng-show = "canPlay"  id = "video" width="720" controls poster="/images/{{movie.images.placeholder}}" >
+            </video>
+            <div ng-hide = "canPlay" class = "not-support" >
+               <h3 class = "support-msg"> Your browser do not support this video format <span class = "sad-icon">:(</span></h3>
+            </div>
+            <div class = "descrption-container">
+               <h3>{{movie.title}} <span ng-show = "movie.meta.releaseYear">({{movie.meta.releaseYear}})</span></h3>
+               <div class = "director-writer" ng-repeat = "directors in movie.meta.directors">
+                  <p> Director:{{directors.name}}</p>
+                  <p> Writers:{{directors.name}}</p>
+               </div>
+          </div>
+         </div>
+      </div>
+   </div>
+   <section>
+   <!--movies covers -->
+   <section id = "movies">
+   <div class = "container">
+      <div class = "row">
+         <div class = " col-sm-8 col-sm-offset-2">
+            <div class = "row">
+               <div class = "col-md-3 col-xs-6 " ng-repeat = "movie in movies">
+                  <img  class = "movie-cover" src = "images/{{movie.images.cover}}" ng-click = "playCurrentMovie(movie)"> 
+                  <p class = "movie-title wow bounce"  >{{movie.title}} <span class = "movie-releaseYear">{{movie.meta.releaseYear}}</span></p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <section>
+</section>

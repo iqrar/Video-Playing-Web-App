@@ -1,0 +1,72 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+#header {
+    text-align: center;
+    padding-top: 10px;
+    background-color: rgba(0,0,0,0.7);
+    height: 100px;
+}
+#header h2 {
+    color: #fff;
+}
+.not-support {
+    min-height:370px;
+    background-color:rgba(0,0,0,0.5);
+    display:none;
+}
+.support-msg {
+    padding-top:170px;
+    text-align:center;
+    color:#fff;
+}
+.sad-icon {
+    font-size:40px;
+}
+h3 {
+ font-weight:200;
+}
+video {
+    max-width:100%;
+}
+.descrption-container {
+    margin-left:25px;
+}
+.movie-cover {
+    cursor:pointer;
+    display:none;
+    -webkit-box-shadow: 1px 1px 1px 1px  #ccc;
+    -moz-box-shadow: 1px 1px 1px 1px  #ccc;
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+#player {
+    padding: 25px 0;
+}
+#movies {
+    padding-top:65px;
+}
+.movie-title {
+    padding-top:5px;
+    margin-left:10px;
+}
+.movie-releaseYear {
+    display:block;
+}
+/* small devices */
+@media (max-width: 992px) {
+   #movies, #player {
+    text-align:center;
+   }
+   .sad-icon {
+    font-size:20px;
+   }
+   .support-msg {
+    width:95%;
+   }  
+}
+
+
+
+
